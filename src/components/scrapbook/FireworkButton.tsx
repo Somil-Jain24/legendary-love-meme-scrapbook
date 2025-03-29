@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Fireworks } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 const FireworkButton = () => {
   const [fireworks, setFireworks] = useState<{id: number, top: string, left: string, color: string}[]>([]);
@@ -46,7 +46,7 @@ const FireworkButton = () => {
         onClick={triggerFireworks}
         className="flex items-center gap-2 px-4 py-2 bg-royal-purple text-white rounded-md hover:bg-opacity-90 transition-all"
       >
-        <Fireworks className="h-5 w-5" />
+        <Sparkles className="h-5 w-5" />
         <span>Surprise!</span>
       </button>
       

@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,34 +62,64 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom colors for our love scrapbook
+				royal: {
+					purple: '#7E69AB',
+					gold: '#FFD700',
+					cream: '#FFF8E7',
+					dark: '#1A1F2C',
+					light: '#D6BCFA',
+				},
+			},
+			fontFamily: {
+				'royal': ['Playfair Display', 'serif'],
+				'comic': ['Comic Sans MS', 'cursive'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			backgroundImage: {
+				'parchment': "url('/images/parchment.jpg')",
+				'gold-frame': "url('/images/gold-frame.png')",
+			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'scroll-text': {
+					'0%': { width: '0' },
+					'100%': { width: '100%' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
+				},
+				'rotate-crown': {
+					'0%': { transform: 'rotate(-10deg)' },
+					'50%': { transform: 'rotate(10deg)' },
+					'100%': { transform: 'rotate(-10deg)' }
+				},
+				'firework': {
+					'0%': { transform: 'translate(-50%, -50%) scale(0)', opacity: '1' },
+					'50%': { transform: 'translate(-50%, -50%) scale(1)', opacity: '0.8' },
+					'100%': { transform: 'translate(-50%, -50%) scale(1.2)', opacity: '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'scroll-text': 'scroll-text 2s ease-out forwards',
+				'fade-in': 'fade-in 1s ease-out',
+				'rotate-crown': 'rotate-crown 2s infinite',
+				'firework': 'firework 1s forwards',
 			}
 		}
 	},

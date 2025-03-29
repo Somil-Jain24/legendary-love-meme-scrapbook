@@ -76,8 +76,8 @@ const Index = () => {
             <ScrollText text="Forget those boring, predictable love stories." delay={500} />
             <ScrollText text="This one is legendary." delay={2000} />
             <ScrollText text="This is the tale of two people..." delay={3500} />
-            <ScrollText text="One: Aditi—the effortlessly cool, sassy queen 👑." delay={5000} />
-            <ScrollText text="The other: Me—nervous, overthinking, and very much in love. 💀😂" delay={6500} />
+            <ScrollText text="One: Aditi—the effortlessly cool, overthinker, sassy queen 👑." delay={5000} />
+            <ScrollText text="The other: Me—embibert, Forget everything, and very much in love. 💀😂" delay={6500} />
           </div>
         </div>
         
